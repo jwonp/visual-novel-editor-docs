@@ -1,5 +1,8 @@
 # Visual novel editor docs
+## 프로젝트 개요
+Visual novel editor는 비주얼 노벨을 제작, 서비스하는 프로젝트입니다.
 
+협업을 위해 문서화 중이며, 문서화 완료 시 팀원을 모아서 제작할 예정입니다. Figma와 Obsidian을 사용해서 내용을 제작 중입니다.
 
 
 ## 이 프로젝트는 MindStone를 사용했습니다.
