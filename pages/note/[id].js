@@ -11,6 +11,7 @@ import FolderTree from "../../components/FolderTree";
 import {getFlattenArray} from "../../lib/utils";
 import MDContent from "../../components/MDContent";
 import dynamic from 'next/dynamic'
+import { useEffect } from "react";
 
 const DynamicGraph = dynamic(
     () => import('../../components/Graph'),
@@ -18,7 +19,7 @@ const DynamicGraph = dynamic(
 )
 
 export default function Home({note, backLinks, fileNames, tree, flattenNodes, graphData}) {
-
+    
     return (
         <Layout>
             <Head>
@@ -28,7 +29,7 @@ export default function Home({note, backLinks, fileNames, tree, flattenNodes, gr
                 <nav className="nav-bar">
                     <FolderTree tree={tree} flattenNodes={flattenNodes}/>
                 </nav>
-                <MDContent content={note.data} fileNames={fileNames} handleOpenNewContent={null} backLinks={backLinks}/>
+                <MDContent title={note.id} content={note.data} fileNames={fileNames} handleOpenNewContent={null} backLinks={backLinks}/>
                 <DynamicGraph graph={graphData}/>
             </div>
 
