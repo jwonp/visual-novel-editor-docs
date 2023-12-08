@@ -5,21 +5,23 @@ import {
     getSinglePost,
     convertObject,
     getDirectoryData,
-    constructGraphData, getLocalGraphData
+    constructGraphData, 
+    // getLocalGraphData
 } from "../../lib/utils";
 import FolderTree from "../../components/FolderTree";
 import {getFlattenArray} from "../../lib/utils";
 import MDContent from "../../components/MDContent";
-import dynamic from 'next/dynamic'
-import { useEffect } from "react";
+// import dynamic from 'next/dynamic'
 
-const DynamicGraph = dynamic(
-    () => import('../../components/Graph'),
-    { loading: () => <p>Loading ...</p>, ssr: false }
-)
+// const DynamicGraph = dynamic(
+//     () => import('../../components/Graph'),
+//     { loading: () => <p>Loading ...</p>, ssr: false }
+// )
 
-export default function Home({note, backLinks, fileNames, tree, flattenNodes, graphData}) {
-    
+export default function Home({note, backLinks, fileNames, tree, flattenNodes,
+    //  graphData
+    }) {
+
     return (
         <Layout>
             <Head>
@@ -29,8 +31,8 @@ export default function Home({note, backLinks, fileNames, tree, flattenNodes, gr
                 <nav className="nav-bar">
                     <FolderTree tree={tree} flattenNodes={flattenNodes}/>
                 </nav>
-                <MDContent title={note.id} content={note.data} fileNames={fileNames} handleOpenNewContent={null} backLinks={backLinks}/>
-                <DynamicGraph graph={graphData}/>
+                <MDContent content={note.data} fileNames={fileNames} handleOpenNewContent={null} backLinks={backLinks}/>
+                {/* <DynamicGraph graph={graphData}/> */}
             </div>
 
         </Layout>
@@ -57,14 +59,14 @@ export function getStaticProps({params}) {
     const listOfEdges =   edges.filter(anEdge => anEdge.target === params.id)
     const internalLinks = listOfEdges.map(anEdge => nodes.find(aNode => aNode.slug === anEdge.source)).filter(element => element !== undefined)
     const backLinks = [...new Set(internalLinks)]
-    const graphData = getLocalGraphData(params.id)
+    // const graphData = getLocalGraphData(params.id)
     return {
         props: {
             note,
             tree: tree,
             flattenNodes: flattenNodes,
             backLinks: backLinks.filter(link => link.slug !== params.id),
-            graphData: graphData
+            // graphData: graphData
         },
     };
 }

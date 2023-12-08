@@ -28,14 +28,14 @@ function BackLinks({linkList}) {
     </div>);
 }
 
-function MDContent({title,content, backLinks, handleOpenNewContent}) {
+function MDContent({content, backLinks, handleOpenNewContent}) {
 
-    function handleInternalLinkClick() {
-        //Processing fetching
-        //pass result up to parent container
-        //TODO: handle clicking on internal link, go fetching md content from file then passing it up to parent
-        handleOpenNewContent(content)
-    }
+    // function handleInternalLinkClick() {
+    //     //Processing fetching
+    //     //pass result up to parent container
+    //     //TODO: handle clicking on internal link, go fetching md content from file then passing it up to parent
+    //     handleOpenNewContent(content)
+    // }
 
     useRouter();
     return (
@@ -46,7 +46,6 @@ function MDContent({title,content, backLinks, handleOpenNewContent}) {
                 🌱 <strong>Follow</strong> or <strong>DM</strong> me on Twitter at <span><a
                 href="https://twitter.com/tuancm">@tuancm</a></span>
             </Alert>
-            <h3>{title.replaceAll("__"," / ").replaceAll("++++"," ")}</h3>
             <div dangerouslySetInnerHTML={{__html: content}}/>
             {/*<button onClick={handleInternalLinkClick}>Click me</button>*/}
             {/*<hr/>*/}
