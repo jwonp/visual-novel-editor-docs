@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "rm -rf graph-data.json && next dev",
     "build": "rm -rf graph-data.json && next build",
-    "start": "next start",
+    "start": "next start -p 4000",
     "deploy": "yarn build && git add . && git commit -m '...' && git push"
   },
   "dependencies": {
