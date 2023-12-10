@@ -1,3 +1,6 @@
 ![[Tasks desktop.png]]
 ### Component
-- [[Item line]]
+- [[Background list]]
+- [[Character list]]
+- [[Scene list]]
+- [[Tool bar]]
