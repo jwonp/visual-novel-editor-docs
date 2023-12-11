@@ -34,6 +34,6 @@ yarn-error.log*
 
 .backup
 visual-novel-editor-docs/.obsidian
-posts/Design images
-posts/.obsidian
+visual-novel-editor-docs/Design images
+visual-novel-editor-docs/.obsidian
 graph-data.json
