@@ -1,1 +1,0 @@
-![[Theme list desktop.png]]

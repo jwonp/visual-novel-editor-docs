@@ -1,1 +1,0 @@
-![[Novel Publish item desktop.png]]
