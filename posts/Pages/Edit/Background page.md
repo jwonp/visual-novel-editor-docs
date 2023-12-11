@@ -1,2 +1,9 @@
 ![[Editor scene background desktop.png]]
-___
+
+### Component
+- [[Tasks]]
+
+## State
+```ts
+	const [BackgroundImageURL,setBackgroundImageURL] = useState<string>("");
+```
