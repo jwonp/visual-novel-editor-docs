@@ -5,3 +5,5 @@
 
 ### Props
 - [[SceneDisplayProps]]
+### Component
+- [[Dialogue box]]
