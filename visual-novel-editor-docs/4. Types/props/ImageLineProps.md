@@ -4,3 +4,6 @@ interface ImageLine {
 	characters:CharacterTag[]
 }
 ```
+
+## reference
+- [[CharacterTagProps]]

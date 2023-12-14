@@ -5,3 +5,6 @@ interface SceneDisplay {
 	dialogue: DialougeFormat
 }
 ```
+
+## reference
+- [[DialogueFormat]]
