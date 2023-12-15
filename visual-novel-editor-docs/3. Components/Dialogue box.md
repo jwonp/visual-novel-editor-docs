@@ -8,3 +8,8 @@
 	dialouge:"안녕, 만나서 반가워"
 }
 ```
+
+### State
+```ts
+const [visible, setVisible] = useState<boolean>(true);
+```
