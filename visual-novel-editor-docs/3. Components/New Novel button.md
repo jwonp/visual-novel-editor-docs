@@ -17,3 +17,5 @@ Request {
 state mutate
 ```
 
+### API
+[[5. APIs/Frontend/api/novel/index|/ api / novel / index]]
