@@ -1,29 +1,32 @@
 ![[Tool bar desktop.png]]
 
+### State
 ```ts
-interface BackgroundToolBarButtonVisible {
-	addFolderButton:boolean,
-	addImageButton:boolean,
-	downloadImageButton:boolean,
-	renameButton:boolean,
-	deleteButton:boolean
-}
-interface CharacterdToolBarButtonVisible {
-	addFolderButton:boolean,
-	addCharacterButton:boolean,
-	addImageButton:boolean,
-	downloadImageButton:boolean,
-	renameButton:boolean,
-	deleteButton:boolean
-}
-interface SceneToolBarButtonVisible {
-	addSceneButton:boolean,
-	renameButton:boolean,
-	deleteButton:boolean
-}
+const [toolBarButtonVisible, setToolBarButonVisible] = useState<BackgroundToolBarButtonVisible | CharacterToolBarButtonVisible | SceneToolBarButtonVisible >();
+
+```
+
+### Reference
+- [[BackgroundToolBarButtonVisible]]
+- [[CharacterToolBarButtonVisible]]
+- [[SceneToolBarButtonVisible]]
+
+### onClick
+```ts
+// add scene button
 
 
+// add folder button
 
-const [toolBarButtonVisible, setToolBarButonVisible] = useState<BackgroundToolBarButtonVisible | CharacterdToolBarButtonVisible | SceneToolBarButtonVisible >();
+// add character button
+
+// add image button
+
+// download image button
+
+// rename button
+
+// delete button
+
 
 ```
