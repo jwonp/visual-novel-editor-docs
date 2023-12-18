@@ -1,3 +1,12 @@
 ![[Dialogue Line desktop.png]]
  
- Character tag + text
+### Props
+```json
+{
+	character: CharacterTag,
+	dialouge:string
+}
+```
+
+### Component
+- [[Character tag]]
