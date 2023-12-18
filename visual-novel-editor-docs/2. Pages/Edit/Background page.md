@@ -5,5 +5,5 @@
 
 ## State
 ```ts
-	const [BackgroundImageURL,setBackgroundImageURL] = useState<string>("");
+	const [backgroundImageURL,setBackgroundImageURL] = useState<string>("");
 ```
