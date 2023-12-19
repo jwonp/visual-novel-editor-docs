@@ -3,7 +3,7 @@
 ### Props
 ```json
 {
-	character: CharacterTag,
+	character:CharacterTag,
 	dialouge:string
 }
 ```
