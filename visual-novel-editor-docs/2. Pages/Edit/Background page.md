@@ -1,3 +1,6 @@
+> 
+> /edit/background
+> 
 ![[Editor scene background desktop.png]]
 
 ### Component
