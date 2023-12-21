@@ -1,3 +1,6 @@
+> 
+> /edit/character
+> 
 ![[Editor character list desktop.png]]
 ### Component
 - [[Tasks]]
