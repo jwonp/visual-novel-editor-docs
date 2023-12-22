@@ -5,5 +5,12 @@
 
 ### Props
 - [[SceneDisplayProps]]
+```json
+{
+	backgroundImageURL:string,
+	characterImageURLs:string[],
+	dialogue: DialougeFormat
+}
+```
 ### Component
 - [[Dialogue box]]
