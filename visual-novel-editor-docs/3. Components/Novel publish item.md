@@ -6,6 +6,12 @@
 	title:string,
 	view:number,
 	like:number,
-	isPublished:boolean
+	isPublished:boolean,
+	linkTo:string
 }
+```
+
+### onClick
+```ts
+link to "linkTo"
 ```
