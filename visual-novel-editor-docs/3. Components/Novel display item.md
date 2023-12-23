@@ -8,5 +8,11 @@
 	imageURL:string,
 	view:number,
 	like:number,
+	linkTo:string
 }
+```
+
+### onClick
+```ts
+link to "linkTo"
 ```
