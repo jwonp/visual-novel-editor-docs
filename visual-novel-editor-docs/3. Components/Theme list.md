@@ -4,9 +4,12 @@
 ```json
 {
 	title:string,
-	
+	novelIds:NovelDisplayItemProps[]
 }
 ```
 
 ### Component
 - [[Novel display item]]
+
+### Reference
+- [[NovelDisplayItemProps]]
