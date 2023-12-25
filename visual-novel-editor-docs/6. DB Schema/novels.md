@@ -1,16 +1,20 @@
 ```json
 {
 	title:string,
+	authorUserId:string,
 	isAdult:boolean,
 	lastEditedTime:timestamp,
+	// collection
 	chapters: {
 		"1" : {
 			title:string,
-			view:number,,
+			view:number,
 			like:number,
+			// collection
 			scenes: {
 				"1": {
 					title:string,
+					//collection
 					scripts: {
 						title:string,
 						paragraphs: {
