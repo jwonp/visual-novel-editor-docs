@@ -1,3 +1,4 @@
+#### /[[users]]/
 ```json
 {
 	userId:string,
@@ -15,8 +16,5 @@
 		bonus:number,
 		charged:number
 	},
-	novels:string[],
-	backgroundStorageId:string,
-	characterStorageId:string
 }
 ```

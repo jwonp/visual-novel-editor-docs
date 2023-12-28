@@ -1,3 +1,4 @@
+#### /[[users]]/{user}/[[characters]]/
 ```json
 {
 	"folder name": {

@@ -1,3 +1,4 @@
+#### /[[users]]/{user}/[[backgrounds]]/
 ```json
 {
 	"folder name": {
