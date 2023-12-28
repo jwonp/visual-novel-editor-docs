@@ -3,6 +3,7 @@
 {
 	title:string,
 	view:number,
-	like:number
+	like:number,
+	lastEditedTime:timestamp
 }
 ```
